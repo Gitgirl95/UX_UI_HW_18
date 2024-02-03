@@ -1,0 +1,73 @@
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #373738;
+    color: white;
+
+}
+.logo {
+    width: 100%;
+    padding: 1%;
+    text-align: left;
+    height: 150px;
+}
+
+.navigation {
+    background-color: #373738;
+}
+
+p {
+    color: white;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+    background-color: #373738;
+}
+
+ul {
+    width: 25%;
+    margin-left: auto;
+    padding: 1%;
+}
+
+
+.button {
+background-color: rgb(57, 72, 147);
+color: white;
+padding: 5px;
+border-radius: 5px; 
+}
+
+.footer {
+    margin-left: 0%;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+
+}
+.content {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(192, 215, 230);
+    border-radius: 5px; 
+    text-align: center;
+}
+footer {
+    background-color: #373738;
+    text-align: left;
+}
+
+img {
+    width: 200px;
+}
+
+/* {
+    background-color: lightgray;
+}
+
+/* the above section is my own work
