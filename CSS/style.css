@@ -1,4 +1,5 @@
-
+/** { outline: 1px solid red; }
+*/
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -31,7 +32,11 @@ ul {
     margin-left: auto;
     padding: 1%;
 }
-
+/*
+img {
+    width: 200px;
+}
+*/
 
 .button {
 background-color: rgb(57, 72, 147);
@@ -40,14 +45,11 @@ padding: 5px;
 border-radius: 5px; 
 }
 
-.footer {
-    margin-left: 0%;
-}
 
 .heroImg {
     height: 600px;
     padding: 25px;
-
+    background-image: url("/images/5779873.jpg");
 }
 .content {
     width: 500px;
@@ -57,14 +59,111 @@ border-radius: 5px;
     border-radius: 5px; 
     text-align: center;
 }
+
+
+
+.centered {
+    justify-content: center;
+    margin: 5px;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.mySkills {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 1%;
+}
+
+
+.flexContainer {
+
+    width: 33%;
+    height: 200px;
+    padding: 50px;
+    margin: 1%;
+    background-color: rgb(192, 215, 230);
+    align-items: center;
+}
+
+.paragraph {
+    color: black;
+}
+
+#myWork {
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+  }
+
+
+.myWork {
+    margin: 0px 5%;
+  display: grid;
+  /*grid-template-rows: 500px 500px 500px;*/
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-areas:
+  "app app app"
+  "website website website"
+  "watch watch watch"
+  
+}
+
+.workGrid {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    border-radius: 5px;
+}
+
+
+#app {
+    background-color: rgb(192, 215, 230);
+    padding: 20px;
+
+}
+
+#website {
+    background-color: rgb(192, 215, 230);
+    padding: 20px;
+}
+
+#watch {
+    background-color: rgb(192, 215, 230);
+    padding: 20px;
+}
+.footer {
+    margin-left: 0%;
+}
+
 footer {
     background-color: #373738;
     text-align: left;
 }
 
-img {
-    width: 200px;
+@media only screen and (max-width: 600px) {
+   .flexContainer {display: flex;
+    flex-direction: columns;
+    width: 100%;
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    .myWork {display: grid;
+     width: 100%;
+     grid-template-rows: 300px 300px 300px;
+     grid-template-columns:1fr;
+     grid-template-areas:
+    "app"
+    "website"
+    "watch"
+     }
+ }
 
 /* {
     background-color: lightgray;
